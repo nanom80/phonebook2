@@ -38,8 +38,8 @@
 					<td><%= personList.get(i).getCompany() %></td>
 				</tr>
 				<tr>
-					<td>수정폼으로 이동</td>
-					<td><a href="http://192.168.0.99:8080/phonebook2/pbc?action=delete&pId=<%=personList.get(i).getPersonId()%>">삭제 <%=personList.get(i).getPersonId()%></a></td>
+					<td><a href="http://192.168.0.99:8080/phonebook2/pbc?action=mform&no=<%= personList.get(i).getPersonId() %>">[수정폼으로 이동]</a></td>
+					<td><a href="http://192.168.0.99:8080/phonebook2/pbc?action=delete&pId=<%=personList.get(i).getPersonId()%>">[삭제] <%=personList.get(i).getPersonId()%></a></td>
 				</tr>
 			</tbody>
 		</table>
